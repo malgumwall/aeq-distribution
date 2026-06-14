@@ -82,11 +82,20 @@ Set the publish/output directory to the project root.
 
 ```
 aeq-distribution/
-├── index.html   # all page markup
-├── styles.css   # all styling (design tokens in :root)
-├── script.js    # WhatsApp wiring + nav/menu behavior  ← edit CONFIG here
+├── index.html       # Home (hero, features, explore cards, CTA)
+├── inventory.html   # Product categories
+├── serve.html       # Who we serve + Why AEQ
+├── reviews.html     # Customer reviews
+├── apply.html       # Wholesale application form (submits to WhatsApp)
+├── faq.html         # FAQ accordion
+├── styles.css       # all styling (design tokens in :root)
+├── script.js        # WhatsApp wiring + nav/menu/form behavior  ← edit CONFIG here
 └── README.md
 ```
+
+The header nav and footer are duplicated in each `.html` page — if you change a
+nav/footer link, update it in every page. Bump the `?v=N` on the `styles.css` /
+`script.js` links when you change those files so browsers don't load a stale copy.
 
 ---
 

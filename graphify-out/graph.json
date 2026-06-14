@@ -25,16 +25,25 @@
       "label": "nav",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "aeq_distribution_script_nav",
       "community": 0,
       "norm_label": "nav"
     },
     {
+      "label": "bar",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L34",
+      "id": "aeq_distribution_script_bar",
+      "community": 0,
+      "norm_label": "bar"
+    },
+    {
       "label": "burger",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L40",
+      "source_location": "L48",
       "id": "aeq_distribution_script_burger",
       "community": 0,
       "norm_label": "burger"
@@ -43,7 +52,7 @@
       "label": "mobile",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L41",
+      "source_location": "L49",
       "id": "aeq_distribution_script_mobile",
       "community": 0,
       "norm_label": "mobile"
@@ -52,7 +61,7 @@
       "label": "open",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L44",
+      "source_location": "L52",
       "id": "aeq_distribution_script_open",
       "community": 0,
       "norm_label": "open"
@@ -61,16 +70,61 @@
       "label": "yr",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L56",
+      "source_location": "L64",
       "id": "aeq_distribution_script_yr",
       "community": 0,
       "norm_label": "yr"
     },
     {
+      "label": "form",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L68",
+      "id": "aeq_distribution_script_form",
+      "community": 0,
+      "norm_label": "form"
+    },
+    {
+      "label": "el",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L75",
+      "id": "aeq_distribution_script_el",
+      "community": 0,
+      "norm_label": "el"
+    },
+    {
+      "label": "cats",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L78",
+      "id": "aeq_distribution_script_cats",
+      "community": 0,
+      "norm_label": "cats"
+    },
+    {
+      "label": "lines",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "id": "aeq_distribution_script_lines",
+      "community": 0,
+      "norm_label": "lines"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L94",
+      "id": "aeq_distribution_script_notes",
+      "community": 0,
+      "norm_label": "notes"
+    },
+    {
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L63",
+      "source_location": "L110",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -79,7 +133,7 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L68",
+      "source_location": "L115",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
@@ -94,13 +148,13 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "AEQ Distribution \u2014 Landing Page",
+      "label": "AEQ Distribution Landing Page",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "id": "aeq_distribution_readme_aeq_distribution_landing_page",
       "community": 1,
-      "norm_label": "aeq distribution \u2014 landing page"
+      "norm_label": "aeq distribution landing page"
     },
     {
       "label": "\ud83d\ude80 Go live in 2 edits",
@@ -108,7 +162,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "aeq_distribution_readme_go_live_in_2_edits",
-      "community": 4,
+      "community": 1,
       "norm_label": "\ud83d\ude80 go live in 2 edits"
     },
     {
@@ -117,7 +171,7 @@
       "source_file": "README.md",
       "source_location": "L17",
       "id": "aeq_distribution_readme_codeblock_1",
-      "community": 4,
+      "community": 1,
       "norm_label": "code:js (const config = {)"
     },
     {
@@ -126,7 +180,7 @@
       "source_file": "README.md",
       "source_location": "L33",
       "id": "aeq_distribution_readme_preview_locally",
-      "community": 3,
+      "community": 1,
       "norm_label": "\ud83d\udda5\ufe0f preview locally"
     },
     {
@@ -135,7 +189,7 @@
       "source_file": "README.md",
       "source_location": "L37",
       "id": "aeq_distribution_readme_codeblock_2",
-      "community": 3,
+      "community": 1,
       "norm_label": "code:bash (# python)"
     },
     {
@@ -144,7 +198,7 @@
       "source_file": "README.md",
       "source_location": "L48",
       "id": "aeq_distribution_readme_deploy",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83c\udf10 deploy"
     },
     {
@@ -153,7 +207,7 @@
       "source_file": "README.md",
       "source_location": "L50",
       "id": "aeq_distribution_readme_github_pages",
-      "community": 1,
+      "community": 2,
       "norm_label": "github pages"
     },
     {
@@ -162,7 +216,7 @@
       "source_file": "README.md",
       "source_location": "L55",
       "id": "aeq_distribution_readme_netlify_vercel",
-      "community": 1,
+      "community": 2,
       "norm_label": "netlify / vercel"
     },
     {
@@ -171,7 +225,7 @@
       "source_file": "README.md",
       "source_location": "L61",
       "id": "aeq_distribution_readme_customizing",
-      "community": 2,
+      "community": 1,
       "norm_label": "\ud83c\udfa8 customizing"
     },
     {
@@ -180,7 +234,7 @@
       "source_file": "README.md",
       "source_location": "L73",
       "id": "aeq_distribution_readme_notes",
-      "community": 2,
+      "community": 1,
       "norm_label": "notes"
     },
     {
@@ -227,6 +281,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_bar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
       "source_location": "L53",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -267,11 +331,61 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L63",
+      "source_location": "L68",
       "weight": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_revealels",
+      "target": "aeq_distribution_script_form",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_el",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_cats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_revealels"
     },
     {
       "relation": "contains",
@@ -279,9 +393,9 @@
       "source_file": "script.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_io",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_io"
     },
     {
       "relation": "contains",
