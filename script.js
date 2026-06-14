@@ -63,6 +63,45 @@ const CONFIG = {
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 
+  // ---- Apply form -> WhatsApp (no backend needed) ----
+  const form = document.getElementById("applyForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.reportValidity()) return; // native validation for required fields
+
+      const val = function (id) {
+        const el = document.getElementById(id);
+        return el ? el.value.trim() : "";
+      };
+      const cats = Array.prototype.map
+        .call(form.querySelectorAll('input[name="cat"]:checked'), function (c) {
+          return c.value;
+        })
+        .join(", ");
+
+      const lines = [
+        "*New wholesale application — AEQ Distribution*",
+        "",
+        "Name: " + val("f_first") + " " + val("f_last"),
+        "Business: " + val("f_biz"),
+        "Email: " + val("f_email"),
+        "Phone: " + val("f_phone"),
+        "Business type: " + val("f_type"),
+        "Categories: " + (cats || "—"),
+      ];
+      const notes = val("f_notes");
+      if (notes) lines.push("Notes: " + notes);
+
+      const url =
+        "https://wa.me/" +
+        CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "") +
+        "?text=" +
+        encodeURIComponent(lines.join("\n"));
+      window.open(url, "_blank", "noopener");
+    });
+  }
+
   // ---- Scroll reveal via IntersectionObserver ----
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
