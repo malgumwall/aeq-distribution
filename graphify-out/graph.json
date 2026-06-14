@@ -1,0 +1,370 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "id": "script_js",
+      "community": 0,
+      "norm_label": "script.js"
+    },
+    {
+      "label": "CONFIG",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L10",
+      "id": "aeq_distribution_script_config",
+      "community": 0,
+      "norm_label": "config"
+    },
+    {
+      "label": "nav",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L45",
+      "id": "aeq_distribution_script_nav",
+      "community": 0,
+      "norm_label": "nav"
+    },
+    {
+      "label": "burger",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L53",
+      "id": "aeq_distribution_script_burger",
+      "community": 0,
+      "norm_label": "burger"
+    },
+    {
+      "label": "mobile",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L54",
+      "id": "aeq_distribution_script_mobile",
+      "community": 0,
+      "norm_label": "mobile"
+    },
+    {
+      "label": "open",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L57",
+      "id": "aeq_distribution_script_open",
+      "community": 0,
+      "norm_label": "open"
+    },
+    {
+      "label": "yr",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L69",
+      "id": "aeq_distribution_script_yr",
+      "community": 0,
+      "norm_label": "yr"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 1,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "AEQ Distribution \u2014 Landing Page",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "community": 1,
+      "norm_label": "aeq distribution \u2014 landing page"
+    },
+    {
+      "label": "\ud83d\ude80 Go live in 2 edits",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "id": "aeq_distribution_readme_go_live_in_2_edits",
+      "community": 4,
+      "norm_label": "\ud83d\ude80 go live in 2 edits"
+    },
+    {
+      "label": "code:js (const CONFIG = {)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "aeq_distribution_readme_codeblock_1",
+      "community": 4,
+      "norm_label": "code:js (const config = {)"
+    },
+    {
+      "label": "\ud83d\udda5\ufe0f Preview locally",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "id": "aeq_distribution_readme_preview_locally",
+      "community": 3,
+      "norm_label": "\ud83d\udda5\ufe0f preview locally"
+    },
+    {
+      "label": "code:bash (# Python)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "id": "aeq_distribution_readme_codeblock_2",
+      "community": 3,
+      "norm_label": "code:bash (# python)"
+    },
+    {
+      "label": "\ud83c\udf10 Deploy",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "id": "aeq_distribution_readme_deploy",
+      "community": 2,
+      "norm_label": "\ud83c\udf10 deploy"
+    },
+    {
+      "label": "GitHub Pages",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "id": "aeq_distribution_readme_github_pages",
+      "community": 2,
+      "norm_label": "github pages"
+    },
+    {
+      "label": "Netlify / Vercel",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "id": "aeq_distribution_readme_netlify_vercel",
+      "community": 2,
+      "norm_label": "netlify / vercel"
+    },
+    {
+      "label": "\ud83c\udfa8 Customizing",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "id": "aeq_distribution_readme_customizing",
+      "community": 1,
+      "norm_label": "\ud83c\udfa8 customizing"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "id": "aeq_distribution_readme_notes",
+      "community": 1,
+      "norm_label": "notes"
+    },
+    {
+      "label": "\ud83d\udcc2 Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L81",
+      "id": "aeq_distribution_readme_structure",
+      "community": 1,
+      "norm_label": "\ud83d\udcc2 structure"
+    },
+    {
+      "label": "code:block3 (aeq-distribution/)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L83",
+      "id": "aeq_distribution_readme_codeblock_3",
+      "community": 1,
+      "norm_label": "code:block3 (aeq-distribution/)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_burger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_mobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_yr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "target": "aeq_distribution_readme_go_live_in_2_edits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "target": "aeq_distribution_readme_preview_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "target": "aeq_distribution_readme_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "target": "aeq_distribution_readme_customizing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_aeq_distribution_landing_page",
+      "target": "aeq_distribution_readme_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_go_live_in_2_edits",
+      "target": "aeq_distribution_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_preview_locally",
+      "target": "aeq_distribution_readme_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_deploy",
+      "target": "aeq_distribution_readme_github_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_deploy",
+      "target": "aeq_distribution_readme_netlify_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_customizing",
+      "target": "aeq_distribution_readme_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "aeq_distribution_readme_structure",
+      "target": "aeq_distribution_readme_codeblock_3",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

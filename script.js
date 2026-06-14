@@ -1,10 +1,10 @@
 /* ============================================================
    AEQ Distribution — landing page behavior
    ------------------------------------------------------------
-   👉 EDIT THESE TWO LINES to go live:
+   👉 EDIT THESE LINES to go live:
       - WHATSAPP_NUMBER : full international number, digits only
                           (country code + number, NO "+", spaces, or dashes)
-      - EMAIL           : optional contact email (used by footer "Email AEQ")
+      - EMAIL           : optional contact email (footer "Email AEQ")
    Everything else wires up automatically.
    ============================================================ */
 const CONFIG = {
@@ -17,7 +17,7 @@ const CONFIG = {
 (function () {
   "use strict";
 
-  // ---- Build the WhatsApp deep link ----
+  // ---- WhatsApp deep links ----
   const waHref =
     "https://wa.me/" +
     CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "") +
@@ -34,9 +34,7 @@ const CONFIG = {
   document.querySelectorAll(".js-email").forEach(function (el) {
     el.setAttribute(
       "href",
-      "mailto:" +
-        CONFIG.EMAIL +
-        "?subject=" +
+      "mailto:" + CONFIG.EMAIL + "?subject=" +
         encodeURIComponent("Wholesale inquiry — AEQ Distribution")
     );
   });
@@ -68,4 +66,49 @@ const CONFIG = {
   // ---- Footer year ----
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
+
+  // ---- Respect reduced motion ----
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  // ---- Count-up animation for stats ----
+  function countUp(el) {
+    const target = parseInt(el.getAttribute("data-count"), 10);
+    const suffix = el.getAttribute("data-suffix") || "";
+    if (reduceMotion || isNaN(target)) {
+      el.textContent = target + suffix;
+      return;
+    }
+    const duration = 1100;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+      el.textContent = Math.round(target * eased) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // ---- Scroll reveal via IntersectionObserver ----
+  const revealEls = document.querySelectorAll(".reveal");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+    document.querySelectorAll("[data-count]").forEach(countUp);
+  } else {
+    const io = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          entry.target.querySelectorAll &&
+            entry.target.querySelectorAll("[data-count]").forEach(countUp);
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -8% 0px" }
+    );
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
 })();
