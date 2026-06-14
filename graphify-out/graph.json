@@ -115,16 +115,25 @@
       "label": "notes",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L94",
+      "source_location": "L95",
       "id": "aeq_distribution_script_notes",
       "community": 0,
       "norm_label": "notes"
     },
     {
+      "label": "contact",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L108",
+      "id": "aeq_distribution_script_contact",
+      "community": 0,
+      "norm_label": "contact"
+    },
+    {
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L110",
+      "source_location": "L137",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -133,7 +142,7 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L115",
+      "source_location": "L142",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
@@ -333,9 +342,9 @@
       "source_file": "script.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_form",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_form"
     },
     {
       "relation": "contains",
@@ -343,9 +352,9 @@
       "source_file": "script.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_el",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_el"
     },
     {
       "relation": "contains",
@@ -353,9 +362,9 @@
       "source_file": "script.js",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_cats",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_cats"
     },
     {
       "relation": "contains",
@@ -363,9 +372,9 @@
       "source_file": "script.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_lines",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_lines"
     },
     {
       "relation": "contains",
@@ -373,8 +382,18 @@
       "source_file": "script.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_notes",
+      "target": "aeq_distribution_script_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_contact",
       "confidence_score": 1.0
     },
     {
