@@ -1,5 +1,5 @@
 /* ============================================================
-   AEQ Distribution — landing page behavior
+   AEQ Distribution - landing page behavior
    ------------------------------------------------------------
    👉 EDIT THIS to go live:
       WHATSAPP_NUMBER : full international number, digits only
@@ -8,7 +8,7 @@
    ============================================================ */
 const CONFIG = {
   // Example: +1 (555) 123-4567  ->  "15551234567"
-  WHATSAPP_NUMBER: "10000000000", // ⚠️ PLACEHOLDER — replace with the real number
+  WHATSAPP_NUMBER: "10000000000", // ⚠️ PLACEHOLDER - replace with the real number
   WHATSAPP_MESSAGE: "Hi AEQ Distribution, I'm interested in your wholesale inventory.",
 };
 

@@ -1,11 +1,11 @@
-# AEQ Distribution — Landing Page
+# AEQ Distribution Landing Page
 
 A fast, single-page marketing site for **AEQ Distribution**, a supplier of brand-name
 wholesale and closeout inventory (grocery, beverage, candy, HBA, cleaning, electronics,
 toys, and general merchandise). Every call-to-action funnels visitors straight into
 **WhatsApp** to start a buying conversation.
 
-Static HTML / CSS / vanilla JS — **no build step, no dependencies**. Deploys free on
+Static HTML / CSS / vanilla JS with **no build step and no dependencies**. Deploys free on
 GitHub Pages, Netlify, Vercel, or any static host.
 
 ---
@@ -25,7 +25,7 @@ const CONFIG = {
 > **WhatsApp number format:** digits only, including country code, **no** `+`, spaces, or dashes.
 > Example: `+1 (555) 123-4567` becomes `15551234567`.
 
-That's it — every "Get Inventory", "Request load", the floating button, and the footer link
+That's it. Every "Get Inventory" button, the floating button, and the footer link
 now open WhatsApp with your number and a pre-filled message.
 
 ---
@@ -53,7 +53,7 @@ npx serve .
 3. Choose `main` / `root` and save. Your site goes live at `https://<user>.github.io/<repo>/`.
 
 ### Netlify / Vercel
-Drag-and-drop the folder, or connect the repo. No build command needed — it's static.
+Drag-and-drop the folder, or connect the repo. No build command needed, it's static.
 Set the publish/output directory to the project root.
 
 ---
@@ -62,19 +62,19 @@ Set the publish/output directory to the project root.
 
 | What | Where |
 | --- | --- |
-| WhatsApp number, message, email | `script.js` → `CONFIG` |
+| WhatsApp number & message | `script.js` → `CONFIG` |
 | Colors / fonts / spacing | `styles.css` → `:root` variables at the top |
 | Headlines, copy, sections | `index.html` |
 | Product categories | `index.html` → `#categories` (`.cat-grid`) |
 | Customer segments | `index.html` → `#serve` (`.serve-grid`) |
 | FAQ questions | `index.html` → `#faq` (`<details>` blocks) |
-| Brand names in the marquee | `index.html` → `.marquee__track` |
+| Scrolling category list | `index.html` → `.marquee__track` |
 
 ### Notes
-- Brand names in the scrolling marquee are placeholder text. Swap in the brands you
-  actually carry, and only use brand **logos** you have the right to display.
-- The "live load" hero card and stats are illustrative — update the numbers to reflect
-  real inventory.
+- The scrolling strip lists the product categories, not specific brands. If you add
+  brand names or logos later, only use ones you have the right to display.
+- The copy intentionally avoids made-up stats or claims. Add real numbers only when
+  you have them.
 
 ---
 
