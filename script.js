@@ -89,11 +89,38 @@ const CONFIG = {
         "Email: " + val("f_email"),
         "Phone: " + val("f_phone"),
         "Business type: " + val("f_type"),
+        "Resale cert: " + (val("f_resale") || "—"),
         "Categories: " + (cats || "—"),
       ];
       const notes = val("f_notes");
       if (notes) lines.push("Notes: " + notes);
 
+      const url =
+        "https://wa.me/" +
+        CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "") +
+        "?text=" +
+        encodeURIComponent(lines.join("\n"));
+      window.open(url, "_blank", "noopener");
+    });
+  }
+
+  // ---- Contact form -> WhatsApp ----
+  const contact = document.getElementById("contactForm");
+  if (contact) {
+    contact.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!contact.reportValidity()) return;
+      const v = function (id) {
+        const el = document.getElementById(id);
+        return el ? el.value.trim() : "";
+      };
+      const lines = [
+        "*New message — AEQ Distribution*",
+        "",
+        "Name: " + v("c_name"),
+        "Email: " + v("c_email"),
+        "Message: " + v("c_msg"),
+      ];
       const url =
         "https://wa.me/" +
         CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "") +
