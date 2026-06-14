@@ -28,13 +28,20 @@ const CONFIG = {
     el.setAttribute("rel", "noopener");
   });
 
-  // ---- Sticky nav shadow ----
+  // ---- Sticky nav shadow + scroll progress bar ----
   const nav = document.getElementById("nav");
+  const bar = document.getElementById("scrollbar");
   const onScroll = function () {
     if (nav) nav.classList.toggle("is-stuck", window.scrollY > 8);
+    if (bar) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+      bar.style.width = pct + "%";
+    }
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
 
   // ---- Mobile menu ----
   const burger = document.getElementById("burger");
