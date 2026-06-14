@@ -82,10 +82,9 @@ Set the publish/output directory to the project root.
 
 ```
 aeq-distribution/
-├── index.html       # Home (hero, features, explore cards, CTA)
+├── index.html       # Home (hero, features, explore cards, reviews, CTA)
 ├── inventory.html   # Product categories
 ├── serve.html       # Who we serve + Why AEQ
-├── reviews.html     # Customer reviews
 ├── apply.html       # Wholesale application form (submits to WhatsApp)
 ├── faq.html         # FAQ accordion
 ├── styles.css       # all styling (design tokens in :root)
