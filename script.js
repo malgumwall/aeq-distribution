@@ -7,8 +7,9 @@
    Every CTA on the page then opens WhatsApp automatically.
    ============================================================ */
 const CONFIG = {
-  // Example: +1 (555) 123-4567  ->  "15551234567"
-  WHATSAPP_NUMBER: "10000000000", // ⚠️ PLACEHOLDER - replace with the real number
+  // Full international number, digits only (country code + number, no "+").
+  // +1 (510) 602-0814  ->  "15106020814"
+  WHATSAPP_NUMBER: "15106020814",
   WHATSAPP_MESSAGE: "Hi AEQ Distribution, I'm interested in your wholesale inventory.",
 };
 
