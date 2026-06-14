@@ -16,7 +16,7 @@
       "label": "CONFIG",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L10",
+      "source_location": "L9",
       "id": "aeq_distribution_script_config",
       "community": 0,
       "norm_label": "config"
@@ -25,7 +25,7 @@
       "label": "nav",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L45",
+      "source_location": "L32",
       "id": "aeq_distribution_script_nav",
       "community": 0,
       "norm_label": "nav"
@@ -34,7 +34,7 @@
       "label": "burger",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L53",
+      "source_location": "L40",
       "id": "aeq_distribution_script_burger",
       "community": 0,
       "norm_label": "burger"
@@ -43,7 +43,7 @@
       "label": "mobile",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L54",
+      "source_location": "L41",
       "id": "aeq_distribution_script_mobile",
       "community": 0,
       "norm_label": "mobile"
@@ -52,7 +52,7 @@
       "label": "open",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L57",
+      "source_location": "L44",
       "id": "aeq_distribution_script_open",
       "community": 0,
       "norm_label": "open"
@@ -61,10 +61,28 @@
       "label": "yr",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L69",
+      "source_location": "L56",
       "id": "aeq_distribution_script_yr",
       "community": 0,
       "norm_label": "yr"
+    },
+    {
+      "label": "revealEls",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L63",
+      "id": "aeq_distribution_script_revealels",
+      "community": 0,
+      "norm_label": "revealels"
+    },
+    {
+      "label": "io",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L68",
+      "id": "aeq_distribution_script_io",
+      "community": 0,
+      "norm_label": "io"
     },
     {
       "label": "README.md",
@@ -126,7 +144,7 @@
       "source_file": "README.md",
       "source_location": "L48",
       "id": "aeq_distribution_readme_deploy",
-      "community": 2,
+      "community": 1,
       "norm_label": "\ud83c\udf10 deploy"
     },
     {
@@ -135,7 +153,7 @@
       "source_file": "README.md",
       "source_location": "L50",
       "id": "aeq_distribution_readme_github_pages",
-      "community": 2,
+      "community": 1,
       "norm_label": "github pages"
     },
     {
@@ -144,7 +162,7 @@
       "source_file": "README.md",
       "source_location": "L55",
       "id": "aeq_distribution_readme_netlify_vercel",
-      "community": 2,
+      "community": 1,
       "norm_label": "netlify / vercel"
     },
     {
@@ -153,7 +171,7 @@
       "source_file": "README.md",
       "source_location": "L61",
       "id": "aeq_distribution_readme_customizing",
-      "community": 1,
+      "community": 2,
       "norm_label": "\ud83c\udfa8 customizing"
     },
     {
@@ -162,7 +180,7 @@
       "source_file": "README.md",
       "source_location": "L73",
       "id": "aeq_distribution_readme_notes",
-      "community": 1,
+      "community": 2,
       "norm_label": "notes"
     },
     {
@@ -191,9 +209,9 @@
       "source_file": "script.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_config",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_config"
     },
     {
       "relation": "contains",
@@ -201,9 +219,9 @@
       "source_file": "script.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_nav",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_nav"
     },
     {
       "relation": "contains",
@@ -211,9 +229,9 @@
       "source_file": "script.js",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_burger",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_burger"
     },
     {
       "relation": "contains",
@@ -221,9 +239,9 @@
       "source_file": "script.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_mobile",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_mobile"
     },
     {
       "relation": "contains",
@@ -231,9 +249,9 @@
       "source_file": "script.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_open",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_open"
     },
     {
       "relation": "contains",
@@ -241,8 +259,28 @@
       "source_file": "script.js",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_yr",
+      "target": "aeq_distribution_script_yr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_revealels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_io",
       "confidence_score": 1.0
     },
     {
@@ -251,9 +289,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_aeq_distribution_landing_page"
     },
     {
       "relation": "contains",
@@ -261,9 +299,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "target": "aeq_distribution_readme_go_live_in_2_edits",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_go_live_in_2_edits"
     },
     {
       "relation": "contains",
@@ -271,9 +309,9 @@
       "source_file": "README.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "target": "aeq_distribution_readme_preview_locally",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_preview_locally"
     },
     {
       "relation": "contains",
@@ -281,9 +319,9 @@
       "source_file": "README.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "target": "aeq_distribution_readme_deploy",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_deploy"
     },
     {
       "relation": "contains",
@@ -291,9 +329,9 @@
       "source_file": "README.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "target": "aeq_distribution_readme_customizing",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_customizing"
     },
     {
       "relation": "contains",
@@ -301,9 +339,9 @@
       "source_file": "README.md",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_aeq_distribution_landing_page",
-      "target": "aeq_distribution_readme_structure",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_structure"
     },
     {
       "relation": "contains",
@@ -311,9 +349,9 @@
       "source_file": "README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_go_live_in_2_edits",
-      "target": "aeq_distribution_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -321,9 +359,9 @@
       "source_file": "README.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_preview_locally",
-      "target": "aeq_distribution_readme_codeblock_2",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_codeblock_2"
     },
     {
       "relation": "contains",
@@ -331,9 +369,9 @@
       "source_file": "README.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_deploy",
-      "target": "aeq_distribution_readme_github_pages",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_github_pages"
     },
     {
       "relation": "contains",
@@ -341,9 +379,9 @@
       "source_file": "README.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_deploy",
-      "target": "aeq_distribution_readme_netlify_vercel",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_netlify_vercel"
     },
     {
       "relation": "contains",
@@ -351,9 +389,9 @@
       "source_file": "README.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_customizing",
-      "target": "aeq_distribution_readme_notes",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_notes"
     },
     {
       "relation": "contains",
@@ -361,9 +399,9 @@
       "source_file": "README.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aeq_distribution_readme_structure",
-      "target": "aeq_distribution_readme_codeblock_3",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_readme_codeblock_3"
     }
   ],
   "hyperedges": []

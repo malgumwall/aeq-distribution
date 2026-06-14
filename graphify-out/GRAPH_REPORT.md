@@ -1,11 +1,11 @@
 # Graph Report - aeq-distribution  (2026-06-14)
 
 ## Corpus Check
-- 2 files · ~2,424 words
+- 2 files · ~27,314 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 20 nodes · 18 edges · 5 communities (3 shown, 2 thin omitted)
+- 22 nodes · 20 edges · 5 communities (2 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -31,33 +31,27 @@
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (5 total, 2 thin omitted)
+## Communities (5 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.29
-Nodes (6): burger, CONFIG, mobile, nav, open, yr
+Cohesion: 0.22
+Nodes (8): burger, CONFIG, io, mobile, nav, open, revealEls, yr
 
 ### Community 1 - "Community 1"
-Cohesion: 0.33
-Nodes (5): AEQ Distribution — Landing Page, code:block3 (aeq-distribution/), 🎨 Customizing, Notes, 📂 Structure
-
-### Community 2 - "Community 2"
-Cohesion: 0.67
-Nodes (3): 🌐 Deploy, GitHub Pages, Netlify / Vercel
+Cohesion: 0.29
+Nodes (6): AEQ Distribution — Landing Page, code:block3 (aeq-distribution/), 🌐 Deploy, GitHub Pages, Netlify / Vercel, 📂 Structure
 
 ## Knowledge Gaps
-- **12 isolated node(s):** `CONFIG`, `nav`, `burger`, `mobile`, `open` (+7 more)
+- **14 isolated node(s):** `CONFIG`, `nav`, `burger`, `mobile`, `open` (+9 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AEQ Distribution — Landing Page` connect `Community 1` to `Community 2`, `Community 3`, `Community 4`?**
-  _High betweenness centrality (0.345) - this node is a cross-community bridge._
-- **Why does `🌐 Deploy` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.123) - this node is a cross-community bridge._
+  _High betweenness centrality (0.281) - this node is a cross-community bridge._
 - **Why does `🚀 Go live in 2 edits` connect `Community 4` to `Community 1`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
 - **What connects `CONFIG`, `nav`, `burger` to the rest of the system?**
-  _12 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _14 weakly-connected nodes found - possible documentation gaps or missing edges._
