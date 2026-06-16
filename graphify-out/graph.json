@@ -175,19 +175,10 @@
       "norm_label": "w"
     },
     {
-      "label": "heroSpin",
-      "file_type": "code",
-      "source_file": "script.js",
-      "source_location": "L176",
-      "id": "aeq_distribution_script_herospin",
-      "community": 0,
-      "norm_label": "herospin"
-    },
-    {
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L208",
+      "source_location": "L179",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -196,7 +187,7 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L213",
+      "source_location": "L184",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
@@ -317,6 +308,15 @@
       "id": "aeq_distribution_readme_codeblock_3",
       "community": 4,
       "norm_label": "code:block3 (aeq-distribution/)"
+    },
+    {
+      "label": "heroSpin",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L176",
+      "community": 0,
+      "norm_label": "herospin",
+      "id": "aeq_distribution_script_herospin"
     },
     {
       "label": "countUp()",
@@ -513,16 +513,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L176",
-      "weight": 1.0,
-      "source": "script_js",
-      "target": "aeq_distribution_script_herospin",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "script.js",
       "source_location": "L63",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -538,6 +528,16 @@
       "confidence_score": 1.0,
       "source": "script_js",
       "target": "aeq_distribution_script_io"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_herospin"
     },
     {
       "relation": "contains",

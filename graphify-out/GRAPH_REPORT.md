@@ -1,7 +1,7 @@
 # Graph Report - aeq-distribution  (2026-06-16)
 
 ## Corpus Check
-- 2 files · ~54,006 words
+- 2 files · ~54,151 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
