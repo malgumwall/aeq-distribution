@@ -157,6 +157,9 @@ h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-s
 /* ---------- Brand wordmark ---------- */
 .brand { display: inline-flex; align-items: center; gap: .45em; letter-spacing: -.01em; }
 .brand__logo { display: block; height: 40px; width: auto; }
+/* dark mode uses the dark-keyed logo so there's no light edge halo */
+html:not([data-theme="light"]) .brand__logo,
+html:not([data-theme="light"]) .hero__logo-spin img { content: url("images/logo-dark.png?v=1"); }
 .brand__mark { font-size: 1.5rem; font-weight: 600; color: var(--accent); }
 .brand__word { font-family: var(--font); font-size: .72rem; font-weight: 600; color: var(--ink-soft); letter-spacing: .26em; text-transform: uppercase; }
 
