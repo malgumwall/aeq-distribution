@@ -22,10 +22,28 @@
       "norm_label": "config"
     },
     {
-      "label": "nav",
+      "label": "themeToggle",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L33",
+      "id": "aeq_distribution_script_themetoggle",
+      "community": 0,
+      "norm_label": "themetoggle"
+    },
+    {
+      "label": "meta",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L41",
+      "id": "aeq_distribution_script_meta",
+      "community": 0,
+      "norm_label": "meta"
+    },
+    {
+      "label": "nav",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L47",
       "id": "aeq_distribution_script_nav",
       "community": 0,
       "norm_label": "nav"
@@ -34,7 +52,7 @@
       "label": "bar",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L34",
+      "source_location": "L48",
       "id": "aeq_distribution_script_bar",
       "community": 0,
       "norm_label": "bar"
@@ -43,7 +61,7 @@
       "label": "burger",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L48",
+      "source_location": "L62",
       "id": "aeq_distribution_script_burger",
       "community": 0,
       "norm_label": "burger"
@@ -52,7 +70,7 @@
       "label": "mobile",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L49",
+      "source_location": "L63",
       "id": "aeq_distribution_script_mobile",
       "community": 0,
       "norm_label": "mobile"
@@ -61,7 +79,7 @@
       "label": "open",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L52",
+      "source_location": "L66",
       "id": "aeq_distribution_script_open",
       "community": 0,
       "norm_label": "open"
@@ -70,7 +88,7 @@
       "label": "yr",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L64",
+      "source_location": "L78",
       "id": "aeq_distribution_script_yr",
       "community": 0,
       "norm_label": "yr"
@@ -79,7 +97,7 @@
       "label": "form",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L68",
+      "source_location": "L82",
       "id": "aeq_distribution_script_form",
       "community": 0,
       "norm_label": "form"
@@ -88,7 +106,7 @@
       "label": "el",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L75",
+      "source_location": "L89",
       "id": "aeq_distribution_script_el",
       "community": 0,
       "norm_label": "el"
@@ -97,7 +115,7 @@
       "label": "cats",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L78",
+      "source_location": "L92",
       "id": "aeq_distribution_script_cats",
       "community": 0,
       "norm_label": "cats"
@@ -106,7 +124,7 @@
       "label": "lines",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L84",
+      "source_location": "L98",
       "id": "aeq_distribution_script_lines",
       "community": 0,
       "norm_label": "lines"
@@ -115,7 +133,7 @@
       "label": "notes",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L95",
+      "source_location": "L109",
       "id": "aeq_distribution_script_notes",
       "community": 0,
       "norm_label": "notes"
@@ -124,16 +142,43 @@
       "label": "contact",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L108",
+      "source_location": "L122",
       "id": "aeq_distribution_script_contact",
       "community": 0,
       "norm_label": "contact"
     },
     {
+      "label": "revTrack",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L159",
+      "id": "aeq_distribution_script_revtrack",
+      "community": 0,
+      "norm_label": "revtrack"
+    },
+    {
+      "label": "revBar",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L160",
+      "id": "aeq_distribution_script_revbar",
+      "community": 0,
+      "norm_label": "revbar"
+    },
+    {
+      "label": "w",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L165",
+      "id": "aeq_distribution_script_w",
+      "community": 0,
+      "norm_label": "w"
+    },
+    {
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L148",
+      "source_location": "L179",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -142,7 +187,7 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L153",
+      "source_location": "L184",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
@@ -189,7 +234,7 @@
       "source_file": "README.md",
       "source_location": "L33",
       "id": "aeq_distribution_readme_preview_locally",
-      "community": 1,
+      "community": 3,
       "norm_label": "\ud83d\udda5\ufe0f preview locally"
     },
     {
@@ -198,7 +243,7 @@
       "source_file": "README.md",
       "source_location": "L37",
       "id": "aeq_distribution_readme_codeblock_2",
-      "community": 1,
+      "community": 3,
       "norm_label": "code:bash (# python)"
     },
     {
@@ -234,7 +279,7 @@
       "source_file": "README.md",
       "source_location": "L61",
       "id": "aeq_distribution_readme_customizing",
-      "community": 1,
+      "community": 5,
       "norm_label": "\ud83c\udfa8 customizing"
     },
     {
@@ -243,7 +288,7 @@
       "source_file": "README.md",
       "source_location": "L73",
       "id": "aeq_distribution_readme_notes",
-      "community": 1,
+      "community": 5,
       "norm_label": "notes"
     },
     {
@@ -252,7 +297,7 @@
       "source_file": "README.md",
       "source_location": "L81",
       "id": "aeq_distribution_readme_structure",
-      "community": 1,
+      "community": 4,
       "norm_label": "\ud83d\udcc2 structure"
     },
     {
@@ -261,7 +306,7 @@
       "source_file": "README.md",
       "source_location": "L83",
       "id": "aeq_distribution_readme_codeblock_3",
-      "community": 1,
+      "community": 4,
       "norm_label": "code:block3 (aeq-distribution/)"
     },
     {
@@ -284,6 +329,26 @@
       "confidence_score": 1.0,
       "source": "script_js",
       "target": "aeq_distribution_script_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_themetoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_meta",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -404,6 +469,36 @@
       "confidence_score": 1.0,
       "source": "script_js",
       "target": "aeq_distribution_script_contact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_revtrack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_revbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_w"
     },
     {
       "relation": "contains",

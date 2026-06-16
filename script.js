@@ -29,6 +29,20 @@ const CONFIG = {
     el.setAttribute("rel", "noopener");
   });
 
+  // ---- Theme toggle (light / dark, remembered) ----
+  const themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      const isLight = document.documentElement.getAttribute("data-theme") === "light";
+      const next = isLight ? "dark" : "light";
+      if (next === "light") document.documentElement.setAttribute("data-theme", "light");
+      else document.documentElement.removeAttribute("data-theme");
+      try { localStorage.setItem("aeq-theme", next); } catch (e) {}
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", next === "light" ? "#ffffff" : "#0d0d10");
+    });
+  }
+
   // ---- Sticky nav shadow + scroll progress bar ----
   const nav = document.getElementById("nav");
   const bar = document.getElementById("scrollbar");
