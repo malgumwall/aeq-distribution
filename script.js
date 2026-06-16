@@ -172,35 +172,6 @@ const CONFIG = {
     window.addEventListener("resize", updateBar, { passive: true });
   }
 
-  // ---- Hero logo: slow spin when idle, snap upright + bob on interaction ----
-  const heroSpin = document.querySelector(".hero__logo-spin");
-  if (heroSpin) {
-    let idleTimer;
-    const resumeSpin = function () {
-      document.body.classList.remove("logo-interacting");
-      heroSpin.style.transition = "";
-      heroSpin.style.transform = "";
-      heroSpin.style.animation = "";
-    };
-    const interact = function () {
-      if (!document.body.classList.contains("logo-interacting")) {
-        // freeze the current rotation, then smoothly snap upright
-        const cur = getComputedStyle(heroSpin).transform;
-        heroSpin.style.transform = cur && cur !== "none" ? cur : "rotate(0deg)";
-        heroSpin.style.animation = "none";
-        void heroSpin.offsetWidth; // reflow so the transition takes
-        heroSpin.style.transition = "transform .45s cubic-bezier(.2,.7,.2,1)";
-        heroSpin.style.transform = "rotate(0deg)";
-        document.body.classList.add("logo-interacting");
-      }
-      clearTimeout(idleTimer);
-      idleTimer = setTimeout(resumeSpin, 2600); // back to spinning after a pause
-    };
-    window.addEventListener("scroll", interact, { passive: true });
-    window.addEventListener("click", interact);
-    window.addEventListener("touchstart", interact, { passive: true });
-  }
-
   // ---- Scroll reveal via IntersectionObserver ----
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"

@@ -1,11 +1,11 @@
-# Graph Report - aeq-distribution  (2026-06-15)
+# Graph Report - aeq-distribution  (2026-06-16)
 
 ## Corpus Check
-- 2 files · ~51,897 words
+- 2 files · ~54,006 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 35 nodes · 33 edges · 6 communities (3 shown, 3 thin omitted)
+- 36 nodes · 34 edges · 6 communities (3 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -36,7 +36,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
-Nodes (20): bar, burger, cats, CONFIG, contact, el, form, io (+12 more)
+Nodes (21): bar, burger, cats, CONFIG, contact, el, form, heroSpin (+13 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.5
@@ -47,7 +47,7 @@ Cohesion: 0.67
 Nodes (3): 🌐 Deploy, GitHub Pages, Netlify / Vercel
 
 ## Knowledge Gaps
-- **26 isolated node(s):** `CONFIG`, `themeToggle`, `meta`, `nav`, `bar` (+21 more)
+- **27 isolated node(s):** `CONFIG`, `themeToggle`, `meta`, `nav`, `bar` (+22 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -55,10 +55,10 @@ Nodes (3): 🌐 Deploy, GitHub Pages, Netlify / Vercel
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AEQ Distribution Landing Page` connect `Community 1` to `Community 2`, `Community 3`, `Community 4`, `Community 5`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+  _High betweenness centrality (0.099) - this node is a cross-community bridge._
 - **Why does `🌐 Deploy` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **What connects `CONFIG`, `themeToggle`, `meta` to the rest of the system?**
-  _26 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _27 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.09 - nodes in this community are weakly interconnected._

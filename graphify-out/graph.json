@@ -175,10 +175,19 @@
       "norm_label": "w"
     },
     {
+      "label": "heroSpin",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L176",
+      "id": "aeq_distribution_script_herospin",
+      "community": 0,
+      "norm_label": "herospin"
+    },
+    {
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L179",
+      "source_location": "L208",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -187,7 +196,7 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L184",
+      "source_location": "L213",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
@@ -336,9 +345,9 @@
       "source_file": "script.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_themetoggle",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_themetoggle"
     },
     {
       "relation": "contains",
@@ -346,9 +355,9 @@
       "source_file": "script.js",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_meta",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_meta"
     },
     {
       "relation": "contains",
@@ -499,6 +508,16 @@
       "confidence_score": 1.0,
       "source": "script_js",
       "target": "aeq_distribution_script_w"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "aeq_distribution_script_herospin",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
