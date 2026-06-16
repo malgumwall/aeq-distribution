@@ -130,6 +130,17 @@ const CONFIG = {
     });
   }
 
+  // ---- Carousel arrows (reviews) ----
+  document.querySelectorAll(".carousel__btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var track = document.getElementById(btn.getAttribute("data-carousel"));
+      if (!track) return;
+      var card = track.querySelector(".quote");
+      var step = card ? card.getBoundingClientRect().width + 20 : 360;
+      track.scrollBy({ left: step * parseInt(btn.getAttribute("data-dir"), 10), behavior: "smooth" });
+    });
+  });
+
   // ---- Scroll reveal via IntersectionObserver ----
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
