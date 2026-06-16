@@ -133,7 +133,7 @@
       "label": "revealEls",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L137",
+      "source_location": "L148",
       "id": "aeq_distribution_script_revealels",
       "community": 0,
       "norm_label": "revealels"
@@ -142,19 +142,10 @@
       "label": "io",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L142",
+      "source_location": "L153",
       "id": "aeq_distribution_script_io",
       "community": 0,
       "norm_label": "io"
-    },
-    {
-      "label": "countUp()",
-      "file_type": "code",
-      "source_file": "script.js",
-      "source_location": "L156",
-      "id": "aeq_distribution_script_countup",
-      "community": 0,
-      "norm_label": "countup()"
     },
     {
       "label": "README.md",
@@ -272,6 +263,15 @@
       "id": "aeq_distribution_readme_codeblock_3",
       "community": 1,
       "norm_label": "code:block3 (aeq-distribution/)"
+    },
+    {
+      "label": "countUp()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L156",
+      "community": 0,
+      "norm_label": "countup()",
+      "id": "aeq_distribution_script_countup"
     }
   ],
   "links": [
@@ -431,9 +431,9 @@
       "source_file": "script.js",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "aeq_distribution_script_countup",
-      "confidence_score": 1.0
+      "target": "aeq_distribution_script_countup"
     },
     {
       "relation": "contains",

@@ -192,7 +192,8 @@ a { color: inherit; text-decoration: none; }
 .brands { padding: 46px 0 4px; border-top: 1px solid var(--line); }
 .brands__label { text-align: center; color: var(--muted); font-size: .76rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 26px; }
 .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
-.marquee__track { display: flex; gap: 56px; width: max-content; animation: scroll 36s linear infinite; }
+.marquee__track { display: flex; gap: 56px; width: max-content; animation: scroll 24s linear infinite; }
+.marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__track span { color: rgba(22,19,15,.34); font-weight: 700; font-size: 1.3rem; letter-spacing: -.01em; white-space: nowrap; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
@@ -420,6 +421,8 @@ a { color: inherit; text-decoration: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
+  /* keep the marquee scrolling — it's the requested decorative motion */
+  .marquee__track { animation: scroll 24s linear infinite !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .cat.reveal, .load.reveal, .serve.reveal, .gs-card.reveal, .quote.reveal, .xcard.reveal, .feature.reveal { transform: none !important; }
   .hero__float { opacity: .92 !important; scale: 1 !important; }
