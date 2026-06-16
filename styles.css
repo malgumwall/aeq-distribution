@@ -410,16 +410,27 @@ html[data-theme="light"] .theme-toggle__moon { display: block; }
   .section { padding: 84px 0; }
 }
 @media (max-width: 560px) {
-  .hero { padding: 88px 0 76px; }
+  .container { padding-inline: 20px; }
+  .hero { padding: 76px 0 64px; }
+  .hero__title { font-size: clamp(2rem, 8.5vw, 2.7rem); max-width: 100%; }
+  .hero__sub { font-size: 1rem; margin-top: 18px; }
+  .hero__cta { width: 100%; margin-top: 30px; }
+  .hero__cta .btn { width: 100%; }
+  .section { padding: 68px 0; }
+  .section__head { margin-bottom: 44px; }
+  .section__head h2 { font-size: clamp(1.8rem, 7vw, 2.3rem); }
+  .page-hero { padding: 84px 0 56px; }
+  .page-hero h1 { font-size: clamp(1.8rem, 7.5vw, 2.5rem); }
   .cat-grid { gap: 14px; margin-top: 36px; }
   .cat { max-width: calc(50% - 7px); }
   .serve-grid, .serve-grid--3, .footer__inner { grid-template-columns: 1fr; }
   .quote { flex-basis: 86%; }
   .form__row, .checks { grid-template-columns: 1fr; }
-  .form { padding: 28px 22px; }
-  .hero__cta .btn { width: 100%; }
+  .form { padding: 26px 20px; }
   .footer__bar { flex-direction: column; }
-  .gs-card { padding: 36px 28px; }
+  .gs-card { padding: 34px 26px; }
+  .connect__inner { padding: 30px 26px; }
+  .connect__inner .btn { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
