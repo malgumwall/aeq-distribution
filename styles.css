@@ -103,7 +103,7 @@ img { max-width: 100%; }
 /* ---------- Headings (serif) ---------- */
 h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-spacing: -.01em; }
 .hl { color: var(--accent); font-weight: 700; }
-.accent { color: var(--accent); font-style: italic; }
+.accent { color: var(--accent); font-style: normal; }
 
 /* ---------- Scroll reveal ---------- */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--ease), transform .7s var(--ease); will-change: opacity, transform; }
