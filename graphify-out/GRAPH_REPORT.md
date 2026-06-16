@@ -1,11 +1,11 @@
-# Graph Report - aeq-distribution  (2026-06-14)
+# Graph Report - aeq-distribution  (2026-06-15)
 
 ## Corpus Check
-- 2 files · ~5,280 words
+- 2 files · ~51,296 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 29 nodes · 27 edges · 3 communities
+- 30 nodes · 28 edges · 3 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -51,9 +51,9 @@ Nodes (3): 🌐 Deploy, GitHub Pages, Netlify / Vercel
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AEQ Distribution Landing Page` connect `Community 1` to `Community 2`?**
-  _High betweenness centrality (0.156) - this node is a cross-community bridge._
+  _High betweenness centrality (0.145) - this node is a cross-community bridge._
 - **Why does `🌐 Deploy` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.056) - this node is a cross-community bridge._
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
 - **What connects `CONFIG`, `nav`, `bar` to the rest of the system?**
   _21 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
