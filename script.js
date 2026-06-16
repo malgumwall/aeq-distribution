@@ -136,10 +136,27 @@ const CONFIG = {
       var track = document.getElementById(btn.getAttribute("data-carousel"));
       if (!track) return;
       var card = track.querySelector(".quote");
-      var step = card ? card.getBoundingClientRect().width + 20 : 360;
+      var step = card ? card.getBoundingClientRect().width + 26 : 360;
       track.scrollBy({ left: step * parseInt(btn.getAttribute("data-dir"), 10), behavior: "smooth" });
     });
   });
+
+  // ---- Reviews progress bar (reflects scroll position) ----
+  const revTrack = document.getElementById("reviewsTrack");
+  const revBar = document.getElementById("revProgress");
+  if (revTrack && revBar) {
+    const updateBar = function () {
+      const max = revTrack.scrollWidth - revTrack.clientWidth;
+      const visible = revTrack.clientWidth / revTrack.scrollWidth; // fraction shown
+      const w = Math.max(0.18, Math.min(visible, 1));
+      const pct = max > 0 ? revTrack.scrollLeft / max : 0;
+      revBar.style.width = w * 100 + "%";
+      revBar.style.left = pct * (100 - w * 100) + "%";
+    };
+    updateBar();
+    revTrack.addEventListener("scroll", updateBar, { passive: true });
+    window.addEventListener("resize", updateBar, { passive: true });
+  }
 
   // ---- Scroll reveal via IntersectionObserver ----
   const reduceMotion = window.matchMedia(
