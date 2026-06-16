@@ -162,8 +162,9 @@ h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-s
 /* ---------- Nav ---------- */
 .nav { position: sticky; top: 0; z-index: 50; background: rgba(13, 13, 16, .72); backdrop-filter: saturate(160%) blur(16px); border-bottom: 1px solid transparent; transition: border-color .25s, background .25s; }
 .nav.is-stuck { border-color: var(--line); background: rgba(13, 13, 16, .9); }
-.nav__inner { display: flex; align-items: center; gap: 18px; height: 76px; }
-.nav__links { display: flex; align-items: center; gap: 32px; margin-left: 26px; margin-right: auto; }
+.nav__inner { display: flex; align-items: center; gap: 18px; height: 76px; position: relative; }
+/* nav links sit in the absolute center of the header; logo left, controls right */
+.nav__links { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 32px; }
 .nav__links a { font-weight: 500; font-size: .94rem; color: var(--muted); position: relative; transition: color .15s; }
 .nav__links a::after { content: ""; position: absolute; left: 0; bottom: -7px; width: 0; height: 1.5px; background: var(--accent); transition: width .25s var(--ease); }
 .nav__links a:hover { color: var(--ink); }
@@ -173,7 +174,7 @@ h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-s
 /* equal-height controls so logo, links, toggle & button share one centered baseline */
 .nav__cta { flex: none; height: 40px; }
 .brand { align-self: center; }
-.theme-toggle { flex: none; width: 40px; height: 40px; border-radius: var(--btn-radius); border: 1px solid var(--line-strong); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
+.theme-toggle { flex: none; margin-left: auto; width: 40px; height: 40px; border-radius: var(--btn-radius); border: 1px solid var(--line-strong); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-tint); }
 .theme-toggle svg { width: 18px; height: 18px; }
 .theme-toggle__moon { display: none; }
@@ -203,8 +204,8 @@ html[data-theme="light"] .theme-toggle__moon { display: block; }
 .hero__caps { margin-top: 12px; font-size: .68rem; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: rgba(255, 255, 255, .26); }
 
 /* ---------- Brands marquee ---------- */
-.brands { padding: 8px 0 4px; border-top: 1px solid var(--line); }
-.brands__label { text-align: center; color: var(--muted); font-size: .72rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; margin: 40px 0 30px; }
+.brands { padding: 0 0 4px; border-top: 1px solid var(--line); }
+.brands__label { text-align: center; color: var(--ink-soft); font-size: .85rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; margin: 16px 0 30px; }
 .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); padding-bottom: 44px; }
 .marquee__track { display: flex; align-items: center; gap: 66px; width: max-content; animation: scroll 30s linear infinite; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
