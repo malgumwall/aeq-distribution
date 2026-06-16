@@ -151,4 +151,72 @@ const CONFIG = {
     );
     revealEls.forEach(function (el) { io.observe(el); });
   }
+
+  // ---- Count-up stats ----
+  function countUp(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    if (isNaN(target)) return;
+    if (reduceMotion) { el.textContent = String(target); return; }
+    var start = null, dur = 1300;
+    function tick(t) {
+      if (start === null) start = t;
+      var p = Math.min((t - start) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var statEls = document.querySelectorAll("[data-count]");
+  if (statEls.length) {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      statEls.forEach(countUp);
+    } else {
+      var statIO = new IntersectionObserver(function (es, ob) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { countUp(e.target); ob.unobserve(e.target); }
+        });
+      }, { threshold: 0.4 });
+      statEls.forEach(function (el) { statIO.observe(el); });
+    }
+  }
+
+  var finePointer = window.matchMedia("(pointer: fine)").matches;
+
+  // ---- Hero mouse parallax ----
+  var hero = document.querySelector(".hero");
+  if (hero && !reduceMotion && finePointer) {
+    var pending = false, nx = 0, ny = 0;
+    hero.addEventListener("mousemove", function (e) {
+      var r = hero.getBoundingClientRect();
+      nx = ((e.clientX - r.left) / r.width - 0.5) * 2;
+      ny = ((e.clientY - r.top) / r.height - 0.5) * 2;
+      if (!pending) {
+        pending = true;
+        requestAnimationFrame(function () {
+          hero.style.setProperty("--mx", nx.toFixed(3));
+          hero.style.setProperty("--my", ny.toFixed(3));
+          pending = false;
+        });
+      }
+    });
+    hero.addEventListener("mouseleave", function () {
+      hero.style.setProperty("--mx", "0");
+      hero.style.setProperty("--my", "0");
+    });
+  }
+
+  // ---- 3D tilt on cards ----
+  if (!reduceMotion && finePointer) {
+    document.querySelectorAll(".load, .gs-card, .quote").forEach(function (el) {
+      el.addEventListener("mousemove", function (e) {
+        var r = el.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        el.style.transform =
+          "perspective(760px) rotateX(" + (-py * 5).toFixed(2) +
+          "deg) rotateY(" + (px * 5).toFixed(2) + "deg) translateY(-6px)";
+      });
+      el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+    });
+  }
 })();
