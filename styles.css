@@ -182,6 +182,28 @@ a { color: inherit; text-decoration: none; }
 .connect__inner p { color: var(--muted); font-size: .95rem; margin-top: 4px; }
 .hero__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2); }
+.accent { color: var(--accent-2); }
+.section__head .accent { color: var(--accent); }
+
+/* hero trust line + segment caps */
+.hero__trust { margin-top: 30px; font-size: .92rem; color: rgba(255,255,255,.85); font-weight: 600; }
+.hero__trust b { color: var(--accent-2); }
+.hero__caps { margin-top: 10px; font-size: .68rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.4); }
+
+/* floating product cards (clean, Steady-style) */
+.hero__card { position: absolute; z-index: 0; width: 140px; background: #fff; border-radius: 16px; padding: 8px; box-shadow: 0 26px 56px rgba(0,0,0,.5); }
+.hero__card img { display: block; width: 100%; height: 122px; object-fit: cover; border-radius: 10px; }
+.hero__card b { position: absolute; top: 15px; left: 15px; background: rgba(18,12,28,.72); color: #fff; font-size: .56rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 4px 8px; border-radius: 6px; }
+.hero__card--1 { top: 15%; left: 3.5%; rotate: -5deg; animation: cardA 6.5s ease-in-out infinite; }
+.hero__card--2 { bottom: 12%; left: 8.5%; rotate: 4deg; animation: cardB 7.5s ease-in-out infinite; }
+.hero__card--3 { top: 14%; right: 3.5%; rotate: 5deg; animation: cardA 7s ease-in-out infinite; }
+.hero__card--4 { bottom: 13%; right: 7.5%; rotate: -4deg; animation: cardB 8s ease-in-out infinite; }
+@keyframes cardA { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes cardB { 0%, 100% { translate: 0 0; } 50% { translate: 0 -9px; } }
+@media (max-width: 1180px) { .hero__card { display: none; } }
+
+/* nav buttons group */
+.nav__cta { display: flex; align-items: center; gap: 10px; }
 .pill { display: inline-flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 600; color: var(--accent-2); background: var(--accent-tint); border: 1px solid var(--accent-border); padding: 7px 16px; border-radius: 999px; }
 .hero__title { margin-top: 26px; font-size: clamp(2.4rem, 5.4vw, 4rem); line-height: 1.05; font-weight: 800; letter-spacing: -.035em; }
 .hero__sub { margin-top: 22px; font-size: 1.14rem; color: rgba(255,255,255,.78); max-width: 38em; }
