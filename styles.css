@@ -138,8 +138,8 @@ h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-s
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
 .btn .ico { width: 1.1em; height: 1.1em; fill: currentColor; }
-.btn--primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 10px 30px rgba(var(--accent-rgb), .18); }
-.btn--primary:hover { background: var(--accent-strong); box-shadow: 0 16px 38px rgba(var(--accent-rgb), .28); }
+.btn--primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 2px 8px rgba(26, 23, 34, .10); }
+.btn--primary:hover { background: var(--accent-strong); box-shadow: 0 4px 14px rgba(26, 23, 34, .16); }
 .btn--outline { background: transparent; color: var(--ink); border-color: var(--line-strong); }
 .btn--outline:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-tint); }
 .btn--ghost { background: transparent; color: var(--accent); border-color: var(--accent-line); }
@@ -149,7 +149,8 @@ h1, h2, h3, .brand__mark { font-family: var(--serif); font-weight: 500; letter-s
 .btn--block { width: 100%; }
 
 /* ---------- Brand wordmark ---------- */
-.brand { display: inline-flex; align-items: baseline; gap: .45em; letter-spacing: -.01em; }
+.brand { display: inline-flex; align-items: center; gap: .45em; letter-spacing: -.01em; }
+.brand__logo { display: block; height: 40px; width: auto; }
 .brand__mark { font-size: 1.5rem; font-weight: 600; color: var(--accent); }
 .brand__word { font-family: var(--font); font-size: .72rem; font-weight: 600; color: var(--ink-soft); letter-spacing: .26em; text-transform: uppercase; }
 
@@ -196,7 +197,7 @@ html[data-theme="light"] .theme-toggle__moon { display: block; }
 .hero__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 .hero__title { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 700; line-height: 1.05; max-width: 16ch; }
 .hero__sub { margin-top: 26px; font-size: 1.12rem; color: var(--ink-soft); max-width: 40em; }
-.hero__cta { margin-top: 38px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.hero__cta { margin-top: 38px; display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; }
 .hero__trust { margin-top: 46px; font-size: .92rem; color: var(--muted); font-weight: 500; }
 .hero__trust b { color: var(--accent); font-weight: 600; }
 .hero__caps { margin-top: 12px; font-size: .68rem; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: rgba(255, 255, 255, .26); }
