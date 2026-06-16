@@ -402,6 +402,10 @@ html[data-theme="light"] .theme-toggle__moon { display: block; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .marquee__track { animation: scroll 30s linear infinite !important; }
+  /* keep the hero logo's requested motion even under reduced-motion */
+  .hero__logo-spin { animation: spin 16s linear infinite !important; }
+  .logo-interacting .hero__logo-spin { animation: none !important; }
+  .logo-interacting .hero__logo-bob { animation: bob 1.9s ease-in-out infinite !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   html { scroll-behavior: auto; }
 }

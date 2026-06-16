@@ -174,8 +174,7 @@ const CONFIG = {
 
   // ---- Hero logo: slow spin when idle, snap upright + bob on interaction ----
   const heroSpin = document.querySelector(".hero__logo-spin");
-  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (heroSpin && !prefersReduced) {
+  if (heroSpin) {
     let idleTimer;
     const resumeSpin = function () {
       document.body.classList.remove("logo-interacting");
