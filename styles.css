@@ -161,10 +161,25 @@ a { color: inherit; text-decoration: none; }
 .nav__mobile.is-open { display: flex; }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; color: #fff; overflow: hidden; padding: 116px 0 120px; text-align: center;
+.hero { position: relative; color: #fff; overflow: hidden; padding: 88px 0 92px; text-align: center;
   background:
     radial-gradient(900px 520px at 50% -8%, rgba(var(--accent-rgb), .32), transparent 62%),
     linear-gradient(135deg, var(--hero-1), var(--hero-2) 55%, var(--hero-3)); }
+.hero__title { font-size: clamp(2.2rem, 4.8vw, 3.5rem); }
+.hero__sub { font-size: 1.06rem; }
+
+/* ---------- Social proof strip ---------- */
+.proof { padding: 26px 0 6px; text-align: center; }
+.proof__label { color: var(--muted); font-size: .82rem; font-weight: 600; letter-spacing: .04em; }
+.proof__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-top: 14px; }
+.proof__row span { color: var(--ink-soft); font-weight: 700; font-size: .95rem; }
+.proof__row span::before { content: ""; }
+
+/* ---------- Stay connected strip ---------- */
+.connect { padding: 18px 0 0; }
+.connect__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 30px; }
+.connect__inner h3 { font-size: 1.15rem; font-weight: 800; }
+.connect__inner p { color: var(--muted); font-size: .95rem; margin-top: 4px; }
 .hero__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2); }
 .pill { display: inline-flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 600; color: var(--accent-2); background: var(--accent-tint); border: 1px solid var(--accent-border); padding: 7px 16px; border-radius: 999px; }
@@ -218,9 +233,9 @@ a { color: inherit; text-decoration: none; }
 .gs-card .btn { margin-top: auto; }
 
 /* ---------- Sections ---------- */
-.section { padding: 100px 0; }
+.section { padding: 74px 0; }
 .section--soft { background: var(--bg-soft); }
-.section__head { max-width: 640px; margin: 0 auto 60px; text-align: center; }
+.section__head { max-width: 640px; margin: 0 auto 42px; text-align: center; }
 .section__head--left { margin-left: 0; text-align: left; }
 .section__head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }
 .section__head p { margin-top: 18px; color: var(--muted); font-size: 1.06rem; }
