@@ -118,7 +118,8 @@ const CONFIG = {
     });
   }
 
-  // ---- Contact form -> WhatsApp ----
+  // ---- Contact form -> email (opens the visitor's mail app) ----
+  const CONTACT_EMAIL = "contact@aeqdistribution.co";
   const contact = document.getElementById("contactForm");
   if (contact) {
     contact.addEventListener("submit", function (e) {
@@ -128,19 +129,20 @@ const CONFIG = {
         const el = document.getElementById(id);
         return el ? el.value.trim() : "";
       };
-      const lines = [
-        "*New message — AEQ Distribution*",
-        "",
-        "Name: " + v("c_name"),
+      const name = v("c_name");
+      const subject = "Website enquiry" + (name ? " from " + name : "");
+      const body = [
+        "Name: " + name,
         "Email: " + v("c_email"),
-        "Message: " + v("c_msg"),
-      ];
+        "",
+        "Message:",
+        v("c_msg"),
+      ].join("\n");
       const url =
-        "https://wa.me/" +
-        CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "") +
-        "?text=" +
-        encodeURIComponent(lines.join("\n"));
-      window.open(url, "_blank", "noopener");
+        "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+      window.location.href = url;
     });
   }
 
