@@ -385,7 +385,9 @@ html[data-theme="light"] .theme-toggle__moon { display: block; }
 /* ---------- Footer ---------- */
 .footer { background: var(--bg-soft); border-top: 1px solid var(--line); padding: 84px 0 34px; }
 .footer__inner { display: grid; grid-template-columns: 1.7fr 1fr 1fr; gap: 50px; padding-bottom: 50px; border-bottom: 1px solid var(--line); }
-.footer__brand p { margin-top: 18px; max-width: 30em; color: var(--muted); font-size: .96rem; }
+.footer__brand { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.footer__brand .brand__logo { height: 60px; }
+.footer__brand p { margin-top: 16px; max-width: 30em; color: var(--muted); font-size: .96rem; }
 .footer__col h4 { font-family: var(--font); font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
 .footer__col a { display: flex; align-items: center; gap: 9px; padding: 8px 0; color: var(--ink-soft); font-size: .96rem; transition: color .15s; }
 .footer__col a:hover { color: var(--accent); }
